@@ -1,0 +1,42 @@
+:root {
+    --background-color: #f8f8f8; /* Color de fondo predeterminado */
+    --primary-color: #3498db; /* Color principal predeterminado */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+#cart-items-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agregar transición suave al cambiar el color de fondo */
+}
+
+button:hover {
+    background-color: #555; /* Cambiar el color de fondo al pasar el mouse */
+}
+
+#checkout button {
+    background-color: #27ae60; /* Color verde para botón de checkout */
+}

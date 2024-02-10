@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cart.css">
+    <script src="/js/cart.js"></script>
+    <title>Carrito de Compras - Tu Tienda Virtual</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Carrito de Compras</h1>
+        </div>
+    </header>
+    <section id="cart-items">
+        <div class="container" id="cart-items-container">
+            <!-- Aquí se mostrarán los elementos del carrito -->
+        </div>
+    </section>
+
+    <section id="checkout">
+        <div class="container">
+            <div class="total-container">
+                <p>Total: $<span id="cart-total"></span></p>
+            </div>
+            <button onclick="checkout()">Realizar Pago</button>
+            <span id="cart-count"></span>
+        </div>
+    </section>
+
+    <!-- Puedes mantener la sección de productos si planeas mostrar más productos aquí -->
+
+    
+
+</body>
+</html>

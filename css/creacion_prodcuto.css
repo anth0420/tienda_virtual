@@ -1,0 +1,72 @@
+/* Definición de variables */
+:root {
+    --primary-color: #3498db;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --btn-hover-color: #2980b9;
+    --border-radius: 4px;
+    --form-padding: 20px;
+    --dark-background-color: #333;
+    --dark-text-color: #f9f9f9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: var(--dark-background-color);
+        --text-color: var(--dark-text-color);
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+/* Uso de Grid para la sección */
+#add-product {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: var(--form-padding);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="number"],
+input[type="file"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: var(--btn-hover-color);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    #add-product {
+        grid-template-columns: 1fr;
+    }
+}

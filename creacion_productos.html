@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/creacion_prodcuto.css">
+    <title>Agregar Nuevo Producto</title>
+</head>
+<body>
+    <header>
+        <h1>Agregar Nuevo Producto</h1>
+    </header>
+
+    <main>
+        <section id="add-product">
+            <form id="add-product-form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio:</label>
+                    <input type="number" id="precio" name="precio" step="0.01" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagen">Imagen:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+                </div>
+                <button type="submit" class="submit-btn">Agregar Producto</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="/js/creacion_producto.js"></script>
+</body>
+</html>
